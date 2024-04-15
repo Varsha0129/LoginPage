@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(14, 34, 54);
+}
+.form-container {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container h1 {
+    color: aqua;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 20%;
+    font-weight: 600;
+}
+input:focus{
+    box-shadow: 0 0 10px 6px  rgba(8, 231, 251, 0.616);
+}
+form input ,
+.password-wrapper input{
+    border: none;
+    width: 25rem;
+    max-width: 25rem;
+    overflow-x: hidden;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+form input:placeholder{
+    overflow: hidden;
+	 color:aqua;
+}
+button {
+    width: 30em;
+    height: 40px; /* Adjust the height based on your design */
+    background-color: aqua;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #00bcd4;
+}
+.anchor-tags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.anchor-tags a{
+    text-decoration: none;
+    text-transform: capitalize; 
+    color: aqua;
+}
+.password-wrapper {
+    position: relative;
+  }
+
+  .password-wrapper  .fa-eye-slash{
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
